@@ -19,11 +19,8 @@ NRC 감정 사전을 기반으로 단일 감정을 다중 감정으로 확장하
 
 ```
 empathetic-multilabel-emotion-classification/
-├── data/
-│   └── empatheticdialogues_with_multitags.csv
 ├── nrc_emotion_dict.json
 ├── multilabel_emotion_bert.ipynb
-├── multilabel_emotion_bert.py
 ├── README.md
 └── requirements.txt
 ```
@@ -45,8 +42,8 @@ empathetic-multilabel-emotion-classification/
 
 1. 모델 훈련:
 
-```bash
-python multilabel_emotion_bert.py
+```python
+multilabel_emotion_bert.ipynb
 ```
 
 2. 학습된 모델 불러오기 및 예측:
@@ -101,5 +98,5 @@ model.load_state_dict(torch.load("multilabel_emotion_bert.pt"))
 
 ## 🙋‍♂️ 만든 사람
 
-김준식 (Junsik Kim)  
+김준식 (Junsik Kim)
 AI/NLP 엔지니어, 감정 인식·추천 시스템 연구자
